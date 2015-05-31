@@ -61,15 +61,15 @@ public class WorkdayServiceTest {
          List<Workday> workdays = service.getWorkdaysForWeekInYear(23,2014);
          assertNotNull(workdays);
          assertEquals(7, workdays.size());
-         assertEquals("2014-06-09", workdays.get(0).getDate().toString());
+         assertEquals("2014-06-02", workdays.get(0).getDate().toString());
          assertEquals(0, workdays.get(0).getProjectTimes().size());
          assertEquals(0, workdays.get(0).getBreakTimes().size());
-         assertEquals("2014-06-10", workdays.get(1).getDate().toString());
-         assertEquals("2014-06-11", workdays.get(2).getDate().toString());
-         assertEquals("2014-06-12", workdays.get(3).getDate().toString());
-         assertEquals("2014-06-13", workdays.get(4).getDate().toString());
-         assertEquals("2014-06-14", workdays.get(5).getDate().toString());
-         assertEquals("2014-06-15", workdays.get(6).getDate().toString());
+         assertEquals("2014-06-03", workdays.get(1).getDate().toString());
+         assertEquals("2014-06-04", workdays.get(2).getDate().toString());
+         assertEquals("2014-06-05", workdays.get(3).getDate().toString());
+         assertEquals("2014-06-06", workdays.get(4).getDate().toString());
+         assertEquals("2014-06-07", workdays.get(5).getDate().toString());
+         assertEquals("2014-06-08", workdays.get(6).getDate().toString());
      }
      
      

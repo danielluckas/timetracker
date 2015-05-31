@@ -29,10 +29,10 @@ public class Workday {
     private LocalDate date;
    
     @Convert(converter = LocalTimePersistenceConverter.class)
-    private LocalTime beginTime;
+    private LocalTime beginTime = LocalTime.now();
     
     @Convert(converter = LocalTimePersistenceConverter.class)
-    private LocalTime endTime;
+    private LocalTime endTime = LocalTime.now().plusHours(5);
     
     @OneToMany(mappedBy="workday")
     private List<ProjectTime> projectTimes;
@@ -90,6 +90,22 @@ public class Workday {
     @Override
     public String toString() {
         return date.toString(); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public Float getDayBalance() {
+        float dayBalance = 0.00f;
+        if(beginTime != null && endTime != null){
+            int beginTimeSeconds = beginTime.toSecondOfDay();
+            int endTimeSeconds = endTime.toSecondOfDay();
+            int balanceSeconds = endTimeSeconds - beginTimeSeconds;
+            int hours = balanceSeconds % 3600;
+            int minutes = balanceSeconds - (hours * 3600) % 60;
+            double minutesPerHour = minutes / 60;
+            dayBalance = (float) hours;
+            float minutesFloat = (float) minutesPerHour;
+            dayBalance += minutesFloat;
+        }
+        return dayBalance;
     }
     
 }

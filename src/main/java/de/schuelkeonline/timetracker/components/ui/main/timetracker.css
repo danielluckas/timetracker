@@ -8,3 +8,92 @@ and open the template in the editor.
     Author     : danielschuelke
 */
 
+.body{
+    -fx-background-color: #FFF;
+}
+
+.hintText{
+    -fx-font-family: Avenir Light;
+    -fx-font-size: 12px;
+    -fx-text-fill:#808080;
+}
+.normalText{
+    -fx-font-family: Avenir Light;
+    -fx-font-size: 20px;
+    -fx-text-fill:#808080;
+    
+}
+.numberText{
+    -fx-font-family: Avenir Light;
+    -fx-font-size: 30px;
+    -fx-text-fill:#808080;
+}
+
+#workdayList{
+    -fx-padding: 0;
+}
+
+.workdayProjectCount{
+    -fx-background-color: #CCC;
+    -fx-font-family: Avenir Light;
+    -fx-font-size: 20px;
+    -fx-height: 26px;
+    -fx-background-radius: 15;
+   
+}
+
+#workdayList .list-cell {
+    -fx-padding:0px;
+}
+
+#workdayList .list-cell:selected {
+    -fx-border-style-top: none;
+    -fx-border-style-left: solid;
+    -fx-border-style-right: solid;
+    -fx-border-style-bottom: none;
+    -fx-border-size-left: 1px;
+    -fx-border-size-right: 1px;
+    -fx-border-size-bottom: 0px;
+    -fx-border-size-top: 0px;
+    -fx-border-color-left: #CCC;
+    -fx-border-color-right: #CCC;
+    -fx-border-color-top: #CCC;
+    -fx-border-color-bottom: #CCC;
+}
+
+#workdayList{
+    -fx-border-style-top: solid;
+    -fx-border-style-left: none;
+    -fx-border-style-right: none;
+    -fx-border-style-bottom: none;
+    -fx-border-size-left: 0px;
+    -fx-border-size-right: 0px;
+    -fx-border-size-bottom: 0px;
+    -fx-border-size-top: 0px;
+    -fx-border-color-left: #CCC;
+    -fx-border-color-right: #CCC;
+    -fx-border-color-top: #CCC;
+    -fx-border-color-bottom: #CCC;
+}
+    
+
+.nextWeekButton{
+    -fx-border-style: none;
+    -fx-background-size: 44px 44px;
+    -fx-background-color: #FFF;
+    -fx-background-image: url(../..//..//..//..//..//..//classes/images/nextWeekButton.png);
+}
+
+.prevWeekButton{
+    -fx-border-style: none;
+    -fx-background-size: 44px 44px;
+    -fx-background-color: #FFF;
+    -fx-background-image: url(../..//..//..//..//..//..//classes/images/prevWeekButton.png);
+}
+    
+.menuButton{
+    -fx-border-style: none;
+    -fx-background-size: 44px 44px;
+    -fx-background-color: #FFF;
+    -fx-background-image: url(../..//..//..//..//..//..//classes/images/menu.png);
+}

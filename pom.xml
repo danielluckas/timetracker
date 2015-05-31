@@ -76,6 +76,43 @@
         </resources>
 
         <finalName>timetracker</finalName>
+        <pluginManagement>
+        <plugins>
+            <plugin>
+ <groupId>org.codehaus.mojo</groupId>
+ <artifactId>exec-maven-plugin</artifactId>
+ <executions>
+  <execution>
+   <phase>package</phase> <!-- Add this line -->
+   <goals>
+    <goal>exec</goal>
+   </goals>
+   <configuration>
+    <executable>java</executable>
+    <arguments>
+     <argument>-classpath</argument>
+     <classpath/>
+     <argument>de.schuelkeonline.timetracker.TimeTrackerApplication</argument>
+    </arguments>
+   </configuration>
+  </execution>
+ </executions> 
+</plugin>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-jar-plugin</artifactId>
+        <configuration>
+          <archive>
+            <manifest>
+              <addClasspath>true</addClasspath>
+              <mainClass>de.schuelkeonline.timetracker.TimeTrackerApplication</mainClass>
+            </manifest>
+         </archive>
+       </configuration>
+    </plugin>
+  </plugins>
+        </pluginManagement>
     </build>
-
+    
+  
 </project>
