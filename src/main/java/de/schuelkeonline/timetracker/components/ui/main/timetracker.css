@@ -12,6 +12,10 @@ and open the template in the editor.
     -fx-background-color: #FFF;
 }
 
+button{
+    -fx-cursor: hand;
+}
+
 .hintText{
     -fx-font-family: Avenir Light;
     -fx-font-size: 12px;
@@ -19,13 +23,13 @@ and open the template in the editor.
 }
 .normalText{
     -fx-font-family: Avenir Light;
-    -fx-font-size: 20px;
+    -fx-font-size: 18px;
     -fx-text-fill:#808080;
     
 }
 .numberText{
     -fx-font-family: Avenir Light;
-    -fx-font-size: 30px;
+    -fx-font-size: 24px;
     -fx-text-fill:#808080;
 }
 
@@ -43,6 +47,7 @@ and open the template in the editor.
 }
 
 #workdayList .list-cell {
+    -fx-cursor: hand;
     -fx-padding:0px;
 }
 
@@ -78,6 +83,7 @@ and open the template in the editor.
     
 
 .nextWeekButton{
+    -fx-cursor: hand;
     -fx-border-style: none;
     -fx-background-size: 44px 44px;
     -fx-background-color: #FFF;
@@ -85,6 +91,7 @@ and open the template in the editor.
 }
 
 .prevWeekButton{
+    -fx-cursor: hand;
     -fx-border-style: none;
     -fx-background-size: 44px 44px;
     -fx-background-color: #FFF;
@@ -92,8 +99,37 @@ and open the template in the editor.
 }
     
 .menuButton{
+    -fx-cursor: hand;
     -fx-border-style: none;
     -fx-background-size: 44px 44px;
     -fx-background-color: #FFF;
     -fx-background-image: url(../..//..//..//..//..//..//classes/images/menu.png);
+}
+
+.workdayBalanceTimeContainer{
+    -fx-background-color: rgb(229,229,229);
+}
+
+.buttonStartWorkday{
+    -fx-background-color: #FFF;
+    -fx-border-color: rgb(122,201,67);
+    -fx-border-radius: 15px;
+    -fx-text-fill: rgb(122,201,67);
+    -fx-cursor: hand;
+}
+
+.arrowUpButton{
+    -fx-cursor: hand;
+    -fx-border-style: none;
+    -fx-background-size: 44px 44px;
+    -fx-background-color: #FFF;
+    -fx-background-image: url(../..//..//..//..//..//..//classes/images/arrow_up.png);
+}
+
+.arrowDownButton{
+    -fx-cursor: hand;
+    -fx-border-style: none;
+    -fx-background-size: 44px 44px;
+    -fx-background-color: #FFF;
+    -fx-background-image: url(../..//..//..//..//..//..//classes/images/arrow_down.png);
 }

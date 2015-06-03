@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="242.0" maxWidth="430.0" prefHeight="225.0" prefWidth="430.0" styleClass="body" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutY="14.0" prefHeight="48.0" prefWidth="430.0" styleClass="workdayBalanceTimeContainer">
+         <children>
+            <Label layoutX="14.0" layoutY="9.0" prefHeight="27.0" prefWidth="83.0" styleClass="normalText" text="Projekte:" />
+            <Label layoutX="344.0" layoutY="7.0" prefHeight="30.0" prefWidth="20.0" styleClass="numberText" text="∑" />
+            <Label alignment="CENTER_RIGHT" layoutX="364.0" layoutY="7.0" prefHeight="30.0" prefWidth="52.0" styleClass="numberText" text="--,--" textAlignment="RIGHT" />
+            <Label layoutX="263.0" layoutY="9.0" prefHeight="11.0" prefWidth="70.0" styleClass="normalText" text="gesamt" />
+         </children>
+      </AnchorPane>
+   </children>
+   <stylesheets>
+      <URL value="@../main/timetracker.css" />
+   </stylesheets>
+</AnchorPane>

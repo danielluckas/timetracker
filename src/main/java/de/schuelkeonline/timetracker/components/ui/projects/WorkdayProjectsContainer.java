@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package de.schuelkeonline.timetracker.components.ui.workday;
+package de.schuelkeonline.timetracker.components.ui.projects;
 
 import de.schuelkeonline.timetracker.components.beans.Workday;
 import java.io.IOException;
@@ -22,25 +22,15 @@ import javafx.scene.layout.VBox;
  *
  * @author danielschuelke
  */
-public class WorkdayCellContainer {
+public class WorkdayProjectsContainer {
     
     @FXML
-    private AnchorPane anchorPane;
-    @FXML
-    private Label dayLabel;
-    @FXML
-    private Label weekdayLabel;
-    
-    @FXML
-    private Label countLabel;
-    
-    @FXML
-    private Label balanceLabel;
-    
+    private Node anchorPane;
+
     private Workday workday;
 
-    public WorkdayCellContainer(Workday workday) {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("workdayCellContainer.fxml"));
+    public WorkdayProjectsContainer(Workday workday) {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("workdayProjectsContainer.fxml"));
         fxmlLoader.setController(this);
         try
         {
@@ -51,14 +41,6 @@ public class WorkdayCellContainer {
             throw new RuntimeException(e);
         }
         this.workday = workday;
-        
-        
-        
-        dayLabel.setText(workday.getDate().format(DateTimeFormatter.ofPattern("dd")));
-        weekdayLabel.setText(workday.getDate().getDayOfWeek().getDisplayName(TextStyle.SHORT, Locale.GERMAN));
-        countLabel.setText(String.valueOf(workday.getProjectTimes().size()));
-        
-        balanceLabel.setText(new DecimalFormat("#,##").format(workday.getDayBalance()));
         
     }
     

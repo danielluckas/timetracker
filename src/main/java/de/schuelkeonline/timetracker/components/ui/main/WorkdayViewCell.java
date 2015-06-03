@@ -7,6 +7,7 @@ package de.schuelkeonline.timetracker.components.ui.main;
 
 import de.schuelkeonline.timetracker.components.beans.Workday;
 import de.schuelkeonline.timetracker.components.ui.workday.WorkdayCellContainer;
+import de.schuelkeonline.timetracker.components.ui.workday.WorkdayTimeContainer;
 import javafx.scene.control.ListCell;
 
 /**

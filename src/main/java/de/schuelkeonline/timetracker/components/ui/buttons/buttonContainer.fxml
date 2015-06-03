@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="188.0" maxWidth="420.0" prefHeight="55.0" prefWidth="420.0" styleClass="body" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@../main/timetracker.css" />
+    </stylesheets>
+   <children>
+      <Button alignment="CENTER" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="390.0" styleClass="buttonStartWorkday" text="Arbeitstag beginnen" />
+      <Button alignment="CENTER" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="390.0" styleClass="buttonStartWorkday" text="Arbeitstag abschließen" />
+      <Button alignment="CENTER" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="390.0" styleClass="buttonStartWorkday" text="Arbeitstag speichern" />
+      <Button alignment="CENTER" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="390.0" styleClass="buttonStartWorkday" text="Arbeitstag bearbeiten" />
+   </children>
+</AnchorPane>
