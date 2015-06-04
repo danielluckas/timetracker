@@ -15,7 +15,6 @@ import java.util.List;
 import javax.persistence.Convert;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
 /**
@@ -111,9 +110,15 @@ public class Workday {
             BigDecimal bd = new BigDecimal(Float.toString(dayBalance));
             bd = bd.setScale(2, BigDecimal.ROUND_HALF_UP);
             dayBalance = bd.floatValue();
-            
+            dayBalance = dayBalance - getFullBreakHours();
         }
         return dayBalance ;
+    }
+
+    public float getFullBreakHours() {
+        float fullBreakTimes= 0.00f;
+        fullBreakTimes = this.breakTimes.stream().map((breakTime) -> breakTime.getBreakHours()).reduce(fullBreakTimes, (accumulator, _item) -> accumulator + _item);
+        return fullBreakTimes;
     }
     
 }

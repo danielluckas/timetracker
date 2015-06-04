@@ -9,6 +9,8 @@ import de.schuelkeonline.timetracker.db.LocalDatePersistenceConverter;
 import java.time.LocalDate;
 import javax.persistence.Convert;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -21,6 +23,7 @@ import javax.persistence.ManyToOne;
 public class BreakTime {
     
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private long id;
     
     @ManyToOne

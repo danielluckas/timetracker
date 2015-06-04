@@ -49,6 +49,7 @@ button{
 #workdayList .list-cell {
     -fx-cursor: hand;
     -fx-padding:0px;
+    -fx-graphic-text-gap:0px;	
 }
 
 #workdayList .list-cell:selected {

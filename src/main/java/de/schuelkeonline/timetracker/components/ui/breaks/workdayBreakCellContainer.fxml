@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="50.0" maxWidth="420.0" minHeight="50.0" minWidth="420.0" prefHeight="50.0" prefWidth="420.0" styleClass="body" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<children>
+    <Label fx:id="breakTimeLabel" alignment="CENTER" layoutX="14.0" layoutY="8.0" prefHeight="16.0" prefWidth="51.0" styleClass="numberText" text="1,00" textAlignment="CENTER" />
+    <Label fx:id="breakTextLabel" layoutX="90.0" layoutY="12.0" prefHeight="27.0" prefWidth="226.0" styleClass="normalText" text="Automatische Pause" textAlignment="CENTER" />
+      <ImageView fitHeight="44.0" fitWidth="44.0" layoutX="362.0" layoutY="3.0" onMouseClicked="#handleRemove" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@minus.png" />
+         </image>
+      </ImageView>
+</children>
+    <stylesheets>
+        <URL value="@../main/timetracker.css" />
+    </stylesheets>
+</AnchorPane>

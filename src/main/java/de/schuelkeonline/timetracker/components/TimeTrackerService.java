@@ -5,6 +5,7 @@
  */
 package de.schuelkeonline.timetracker.components;
 
+import de.schuelkeonline.timetracker.components.beans.BreakTime;
 import de.schuelkeonline.timetracker.components.beans.TimeTrackerData;
 import de.schuelkeonline.timetracker.components.beans.Workday;
 import java.time.LocalDate;
@@ -76,8 +77,8 @@ public class TimeTrackerService {
     public void selectWorkday(Workday newSelectedWorkday) {
         if(data.getWorkdays().contains(newSelectedWorkday)){
             data.setSelectedWorkday(newSelectedWorkday);
-            
         }
+        
     }
 
     public void saveWorkday(Workday workday) {

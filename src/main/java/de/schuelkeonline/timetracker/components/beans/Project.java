@@ -6,6 +6,8 @@
 package de.schuelkeonline.timetracker.components.beans;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 /**
@@ -16,6 +18,7 @@ import javax.persistence.Id;
 public class Project {
     
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private String id;
     
     private String name;
