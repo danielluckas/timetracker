@@ -6,12 +6,12 @@
 <?import java.net.*?>
 <?import javafx.scene.control.Label?>
 
-<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="242.0" maxWidth="430.0" prefHeight="199.0" prefWidth="430.0" styleClass="body" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="242.0" maxWidth="430.0" prefHeight="185.0" prefWidth="430.0" styleClass="body" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
     <stylesheets>
         <URL value="@../main/timetracker.css" />
     </stylesheets>
    <children>
-      <AnchorPane layoutY="14.0" prefHeight="48.0" prefWidth="430.0" styleClass="workdayBalanceTimeContainer">
+      <AnchorPane prefHeight="48.0" prefWidth="430.0" styleClass="workdayBalanceTimeContainer">
          <children>
             <Label layoutX="14.0" layoutY="11.0" styleClass="normalText" text="Arbeitstag" />
             <Label layoutX="322.0" layoutY="7.0" prefHeight="30.0" prefWidth="20.0" styleClass="numberText" text="∑" />
@@ -19,21 +19,21 @@
             <Label layoutX="216.0" layoutY="9.0" prefHeight="30.0" prefWidth="106.0" styleClass="normalText" text="( +/- --,-- h)" />
          </children>
       </AnchorPane>
-      <Label layoutX="197.0" layoutY="114.0" styleClass="normalText" text="bis" />
-      <Label alignment="CENTER" layoutX="72.0" layoutY="107.0" prefHeight="43.0" prefWidth="73.0" styleClass="numberText" text=" : " textAlignment="RIGHT" />
-      <TextField fx:id="fromHourTextField" alignment="CENTER" layoutX="35.0" layoutY="109.0" prefHeight="35.0" prefWidth="64.0" styleClass="normalText" text="12" />
-      <TextField fx:id="fromMinuteTextField" alignment="CENTER" layoutX="118.0" layoutY="109.0" prefHeight="39.0" prefWidth="64.0" style="-fx-padding: 5px;" styleClass="normalText" text="--" />
-      <TextField fx:id="toMinuteTextField" alignment="CENTER" layoutX="312.0" layoutY="107.0" prefHeight="43.0" prefWidth="64.0" styleClass="normalText" text="--" />
-      <TextField fx:id="toHourTextField" alignment="CENTER" layoutX="229.0" layoutY="109.0" prefHeight="39.0" prefWidth="64.0" styleClass="normalText" text="--" />
-      <Label alignment="CENTER" layoutX="266.0" layoutY="107.0" prefHeight="43.0" prefWidth="73.0" styleClass="numberText" text=" : " textAlignment="RIGHT" />
-      <Button fx:id="plusHourFromButton" layoutX="45.0" layoutY="62.0" mnemonicParsing="false" onAction="#plusHourFrom" prefHeight="44.0" prefWidth="44.0" styleClass="arrowUpButton" />
-      <Button fx:id="plusMinuteFromButton" layoutX="128.0" layoutY="62.0" mnemonicParsing="false" onAction="#plusMinuteFrom" prefHeight="44.0" prefWidth="44.0" styleClass="arrowUpButton" />
-      <Button fx:id="plusHourToButton" layoutX="239.0" layoutY="62.0" mnemonicParsing="false" onAction="#plusHourTo" prefHeight="44.0" prefWidth="44.0" styleClass="arrowUpButton" />
-      <Button fx:id="plusMinuteToButton" layoutX="322.0" layoutY="62.0" mnemonicParsing="false" onAction="#plusMinuteTo" prefHeight="44.0" prefWidth="44.0" styleClass="arrowUpButton" />
-      <Button fx:id="minusHourFromButton" layoutX="45.0" layoutY="150.0" mnemonicParsing="false" onAction="#minusHourFrom" prefHeight="44.0" prefWidth="44.0" styleClass="arrowDownButton" />
-      <Button fx:id="minusMinuteFromButton" layoutX="128.0" layoutY="150.0" mnemonicParsing="false" onAction="#minusMinuteFrom" prefHeight="44.0" prefWidth="44.0" styleClass="arrowDownButton" />
-      <Button fx:id="minusHourToButton" layoutX="239.0" layoutY="150.0" mnemonicParsing="false" onAction="#minusHourTo" prefHeight="44.0" prefWidth="44.0" styleClass="arrowDownButton" />
-      <Button fx:id="minusMinuteToButton" layoutX="322.0" layoutY="150.0" mnemonicParsing="false" onAction="#minusMinuteTo" prefHeight="44.0" prefWidth="44.0" styleClass="arrowDownButton" />
-      <Label alignment="CENTER" layoutX="272.0" layoutY="147.0" prefHeight="19.0" prefWidth="64.0" styleClass="hintText" text="( geplant )" textAlignment="RIGHT" />
+      <Label layoutX="197.0" layoutY="100.0" styleClass="normalText" text="bis" />
+      <Label alignment="CENTER" layoutX="72.0" layoutY="93.0" prefHeight="43.0" prefWidth="73.0" styleClass="numberText" text=" : " textAlignment="RIGHT" />
+      <TextField fx:id="fromHourTextField" alignment="CENTER" layoutX="35.0" layoutY="95.0" prefHeight="35.0" prefWidth="64.0" styleClass="normalText" text="12" />
+      <TextField fx:id="fromMinuteTextField" alignment="CENTER" layoutX="118.0" layoutY="95.0" prefHeight="39.0" prefWidth="64.0" style="-fx-padding: 5px;" styleClass="normalText" text="--" />
+      <TextField fx:id="toMinuteTextField" alignment="CENTER" layoutX="312.0" layoutY="93.0" prefHeight="43.0" prefWidth="64.0" styleClass="normalText" text="--" />
+      <TextField fx:id="toHourTextField" alignment="CENTER" layoutX="229.0" layoutY="95.0" prefHeight="39.0" prefWidth="64.0" styleClass="normalText" text="--" />
+      <Label alignment="CENTER" layoutX="266.0" layoutY="93.0" prefHeight="43.0" prefWidth="73.0" styleClass="numberText" text=" : " textAlignment="RIGHT" />
+      <Button fx:id="plusHourFromButton" layoutX="45.0" layoutY="48.0" mnemonicParsing="false" onAction="#plusHourFrom" prefHeight="44.0" prefWidth="44.0" styleClass="arrowUpButton" />
+      <Button fx:id="plusMinuteFromButton" layoutX="128.0" layoutY="48.0" mnemonicParsing="false" onAction="#plusMinuteFrom" prefHeight="44.0" prefWidth="44.0" styleClass="arrowUpButton" />
+      <Button fx:id="plusHourToButton" layoutX="239.0" layoutY="48.0" mnemonicParsing="false" onAction="#plusHourTo" prefHeight="44.0" prefWidth="44.0" styleClass="arrowUpButton" />
+      <Button fx:id="plusMinuteToButton" layoutX="322.0" layoutY="48.0" mnemonicParsing="false" onAction="#plusMinuteTo" prefHeight="44.0" prefWidth="44.0" styleClass="arrowUpButton" />
+      <Button fx:id="minusHourFromButton" layoutX="45.0" layoutY="136.0" mnemonicParsing="false" onAction="#minusHourFrom" prefHeight="44.0" prefWidth="44.0" styleClass="arrowDownButton" />
+      <Button fx:id="minusMinuteFromButton" layoutX="128.0" layoutY="136.0" mnemonicParsing="false" onAction="#minusMinuteFrom" prefHeight="44.0" prefWidth="44.0" styleClass="arrowDownButton" />
+      <Button fx:id="minusHourToButton" layoutX="239.0" layoutY="136.0" mnemonicParsing="false" onAction="#minusHourTo" prefHeight="44.0" prefWidth="44.0" styleClass="arrowDownButton" />
+      <Button fx:id="minusMinuteToButton" layoutX="322.0" layoutY="136.0" mnemonicParsing="false" onAction="#minusMinuteTo" prefHeight="44.0" prefWidth="44.0" styleClass="arrowDownButton" />
+      <Label alignment="CENTER" layoutX="272.0" layoutY="133.0" prefHeight="19.0" prefWidth="64.0" styleClass="hintText" text="( geplant )" textAlignment="RIGHT" />
    </children>
 </AnchorPane>

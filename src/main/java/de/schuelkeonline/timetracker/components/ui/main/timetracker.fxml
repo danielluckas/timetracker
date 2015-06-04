@@ -10,45 +10,11 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" fx:id="mainAnchorPane" prefHeight="1007.0" prefWidth="430.0" styleClass="body" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.schuelkeonline.timetracker.components.ui.main.TimeTrackerPresenter">
-    <children>
-        <AnchorPane prefHeight="126.0" prefWidth="420.0">
-            <children>
-                <Button graphicTextGap="0.0" layoutX="5.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="44.0" styleClass="menuButton">
-                </Button>
-                <Label id="weekNumber" fx:id="weekNumberLabel" layoutX="121.0" layoutY="12.0" text="KW 05">
-                    <font>
-                        <Font name="Avenir Roman" size="19.0" />
-                    </font>
-                </Label>
-                <Label id="year" fx:id="yearLabel" layoutX="210.0" layoutY="13.0" text="2015">
-                    <font>
-                        <Font name="Avenir Roman" size="19.0" />
-                    </font>
-                </Label>
-                <Button graphicTextGap="0.0" layoutX="332.0" mnemonicParsing="false" onAction="#handlePreviousWeek" prefHeight="44.0" prefWidth="44.0" styleClass="prevWeekButton">
-
-                </Button>
-                <Button alignment="CENTER_RIGHT" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="376.0" minHeight="44.0" mnemonicParsing="false" onAction="#handleNextWeek" prefWidth="44.0" styleClass="nextWeekButton">
-                </Button>
-                <Label layoutX="192.0" layoutY="13.0" text="/">
-                    <font>
-                        <Font name="Avenir Roman" size="19.0" />
-                    </font>
-                </Label>
-            <Label layoutX="56.0" layoutY="101.0" styleClass="hintText" text="Monat" textFill="#d0d0d0" />
-            <Label layoutX="173.0" layoutY="101.0" styleClass="hintText" text="Woche" textFill="#d0d0d0" />
-            <Label layoutX="339.0" layoutY="101.0" styleClass="hintText" text="Saldo" textFill="#d0d0d0" />
-            <Label fx:id="monthBalanceLabel" alignment="CENTER" layoutX="36.0" layoutY="63.0" styleClass="numberText" text="138,25" textAlignment="CENTER" textFill="#d0d0d0" />
-            <Label fx:id="weekBalanceLabel" alignment="CENTER" layoutX="161.0" layoutY="63.0" styleClass="numberText" text="17,25" textAlignment="CENTER" textFill="#d0d0d0" />
-            <Label fx:id="totalBalanceLabel" alignment="CENTER" layoutX="294.0" layoutY="63.0" styleClass="numberText" text="+125,75" textAlignment="CENTER" textFill="#d0d0d0" />
-            <Line endY="44.0" layoutX="376.0" layoutY="-1.0" stroke="#333333" />
-            </children>
-
-        </AnchorPane>
-        <ListView id="workdayList" fx:id="workdayList" layoutY="143.0" maxHeight="150.0" maxWidth="420.0" prefHeight="140.0" prefWidth="420.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
-    </children>
+<AnchorPane id="AnchorPane" maxWidth="430.0" minWidth="430.0" prefHeight="1007.0" prefWidth="430.0" styleClass="body" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.schuelkeonline.timetracker.components.ui.main.TimeTrackerPresenter">
     <stylesheets>
         <URL value="@timetracker.css" />
     </stylesheets>
+   <children>
+      <VBox fx:id="mainPane" maxWidth="430.0" minWidth="430.0" prefHeight="800.0" prefWidth="430.0" AnchorPane.bottomAnchor="807.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="330.0" AnchorPane.topAnchor="0.0" />
+   </children>
 </AnchorPane>

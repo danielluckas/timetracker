@@ -3,11 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package de.schuelkeonline.timetracker.components.ui.main;
+package de.schuelkeonline.timetracker.components.ui.workdaylist;
 
 import de.schuelkeonline.timetracker.components.beans.Workday;
-import de.schuelkeonline.timetracker.components.ui.workday.WorkdayCellContainer;
-import de.schuelkeonline.timetracker.components.ui.workday.WorkdayTimeContainer;
 import javafx.scene.control.ListCell;
 
 /**

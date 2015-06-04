@@ -63,4 +63,10 @@ public class WorkdayService {
        firstDateOfWeekInYear = startDate.with(DayOfWeek.MONDAY);
        return firstDateOfWeekInYear;
     }
+    
+    public void saveWorkday(Workday workday){
+        if(workDayRepository != null){
+            workday = workDayRepository.save(workday);
+        }
+    }
 }

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.*?>
+<?import javafx.scene.control.Label?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="242.0" maxWidth="430.0" prefHeight="142.0" prefWidth="430.0" styleClass="body" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@../main/timetracker.css" />
+    </stylesheets>
+   <children>
+      <ListView id="workdayList" fx:id="workdayList" maxHeight="150.0" maxWidth="430.0" prefHeight="140.0" prefWidth="430.0" />
+   </children>
+</AnchorPane>

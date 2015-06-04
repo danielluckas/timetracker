@@ -5,6 +5,7 @@
  */
 package de.schuelkeonline.timetracker.components.ui.projects;
 
+import de.schuelkeonline.timetracker.components.beans.TimeTrackerData;
 import de.schuelkeonline.timetracker.components.beans.Workday;
 import java.io.IOException;
 import java.text.DecimalFormat;
@@ -17,19 +18,25 @@ import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
  *
  * @author danielschuelke
  */
+@Component
 public class WorkdayProjectsContainer {
     
     @FXML
     private Node anchorPane;
 
+    @Autowired
+    private TimeTrackerData data;
+    
     private Workday workday;
 
-    public WorkdayProjectsContainer(Workday workday) {
+    public WorkdayProjectsContainer() {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("workdayProjectsContainer.fxml"));
         fxmlLoader.setController(this);
         try
@@ -40,12 +47,21 @@ public class WorkdayProjectsContainer {
         {
             throw new RuntimeException(e);
         }
-        this.workday = workday;
+
         
     }
     
     public Node getContainer(){
         return anchorPane;
+    }
+
+    public void updateView() {
+        workday = data.getSelectedWorkday();
+        if(workday.getBeginTime() == null){
+            anchorPane.setVisible(false);
+        }else {
+            anchorPane.setVisible(true);
+        }
     }
     
 }

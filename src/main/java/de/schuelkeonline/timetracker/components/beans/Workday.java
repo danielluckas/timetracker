@@ -30,10 +30,10 @@ public class Workday {
     private LocalDate date;
    
     @Convert(converter = LocalTimePersistenceConverter.class)
-    private LocalTime beginTime = LocalTime.of(7, 0);
+    private LocalTime beginTime;
     
     @Convert(converter = LocalTimePersistenceConverter.class)
-    private LocalTime endTime = LocalTime.of(16,0);
+    private LocalTime endTime;
     
     @OneToMany(mappedBy="workday")
     private List<ProjectTime> projectTimes;

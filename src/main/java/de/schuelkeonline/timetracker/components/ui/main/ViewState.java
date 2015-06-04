@@ -3,12 +3,15 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package de.schuelkeonline.timetracker.components;
+package de.schuelkeonline.timetracker.components.ui.main;
 
 /**
  *
  * @author danielschuelke
  */
-public class TimeTrackerController {
-    
+public enum ViewState {
+    VIEW,
+    STARTED,
+    EDIT,
+    FINISHED
 }

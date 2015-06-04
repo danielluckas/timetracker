@@ -11,9 +11,9 @@
         <URL value="@../main/timetracker.css" />
     </stylesheets>
    <children>
-      <Button alignment="CENTER" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="390.0" styleClass="buttonStartWorkday" text="Arbeitstag beginnen" />
-      <Button alignment="CENTER" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="390.0" styleClass="buttonStartWorkday" text="Arbeitstag abschließen" />
-      <Button alignment="CENTER" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="390.0" styleClass="buttonStartWorkday" text="Arbeitstag speichern" />
-      <Button alignment="CENTER" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="390.0" styleClass="buttonStartWorkday" text="Arbeitstag bearbeiten" />
+      <Button fx:id="startWorkday" alignment="CENTER" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleStartWorkday" prefHeight="26.0" prefWidth="390.0" styleClass="buttonStartWorkday" text="Arbeitstag beginnen" />
+      <Button fx:id="finishWorkday" alignment="CENTER" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleEndWorkday" prefHeight="26.0" prefWidth="390.0" styleClass="buttonEndWorkday" text="Arbeitstag abschließen" />
+      <Button fx:id="saveWorkday" alignment="CENTER" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleSaveWorkday" prefHeight="26.0" prefWidth="390.0" styleClass="buttonSaveWorkday" text="Arbeitstag speichern" />
+      <Button fx:id="editWorkday" alignment="CENTER" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onAction="#handleEditWorkday" prefHeight="26.0" prefWidth="390.0" styleClass="buttonEditWorkday" text="Arbeitstag bearbeiten" />
    </children>
 </AnchorPane>

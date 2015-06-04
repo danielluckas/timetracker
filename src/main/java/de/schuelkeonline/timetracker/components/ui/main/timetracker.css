@@ -84,26 +84,15 @@ button{
 
 .nextWeekButton{
     -fx-cursor: hand;
-    -fx-border-style: none;
-    -fx-background-size: 44px 44px;
-    -fx-background-color: #FFF;
-    -fx-background-image: url(../..//..//..//..//..//..//classes/images/nextWeekButton.png);
+
 }
 
 .prevWeekButton{
     -fx-cursor: hand;
-    -fx-border-style: none;
-    -fx-background-size: 44px 44px;
-    -fx-background-color: #FFF;
-    -fx-background-image: url(../..//..//..//..//..//..//classes/images/prevWeekButton.png);
 }
     
 .menuButton{
     -fx-cursor: hand;
-    -fx-border-style: none;
-    -fx-background-size: 44px 44px;
-    -fx-background-color: #FFF;
-    -fx-background-image: url(../..//..//..//..//..//..//classes/images/menu.png);
 }
 
 .workdayBalanceTimeContainer{
@@ -118,13 +107,37 @@ button{
     -fx-cursor: hand;
 }
 
+.buttonEndWorkday{
+    -fx-background-color: #FFF;
+    -fx-border-color: rgb(193,39,45);
+    -fx-border-radius: 15px;
+    -fx-text-fill: rgb(193,39,45);
+    -fx-cursor: hand;
+}
+
+.buttonEditWorkday{
+    -fx-background-color: #FFF;
+    -fx-border-color: rgb(247,147,30);
+    -fx-border-radius: 15px;
+    -fx-text-fill: rgb(247,147,30);
+    -fx-cursor: hand;
+}
+
+.buttonSaveWorkday{
+    -fx-background-color: #FFF;
+    -fx-border-color: rgb(193,39,45);
+    -fx-border-radius: 15px;
+    -fx-text-fill: rgb(193,39,45);
+    -fx-cursor: hand;
+}
+
 
 .arrowUpButton{
     -fx-cursor: hand;
     -fx-border-style: none;
     -fx-background-size: 44px 44px;
     -fx-background-color: #FFF;
-    -fx-background-image: url(../..//..//..//..//..//..//classes/images/arrow_up.png);
+    -fx-background-image: url(arrow_up.png);
 }
 
 .arrowDownButton{
@@ -132,5 +145,5 @@ button{
     -fx-border-style: none;
     -fx-background-size: 44px 44px;
     -fx-background-color: #FFF;
-    -fx-background-image: url(../..//..//..//..//..//..//classes/images/arrow_down.png);
+    -fx-background-image: url(arrow_down.png);
 }
