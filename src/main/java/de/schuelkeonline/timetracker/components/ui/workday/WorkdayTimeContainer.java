@@ -169,7 +169,7 @@ public class WorkdayTimeContainer {
         checkVisibilityMinutes(workday.getBeginTime(), plusMinuteFromButton, minusMinuteFromButton);
         checkVisibilityHours(workday.getEndTime(), plusHourToButton, minusHourToButton);
         checkVisibilityMinutes(workday.getEndTime(), plusMinuteToButton, minusMinuteToButton);
-        balanceLabel.setText(String.valueOf(workday.getDayBalance()));
+        balanceLabel.setText(String.format("%.2f", workday.getDayBalance()));
         
     }
     
@@ -247,6 +247,7 @@ public class WorkdayTimeContainer {
 
     private void checkVisibilityHours(LocalTime time, Button plusButton, Button minusButton) {
         int hour = time.getHour();
+        int minute = time.getMinute();
         if(hour == 0){
             plusButton.setVisible(true);
             minusButton.setVisible(false);
@@ -261,10 +262,11 @@ public class WorkdayTimeContainer {
 
     private void checkVisibilityMinutes(LocalTime time, Button plusButton, Button minusButton) {
         int minute = time.getMinute();
-        if(minute == 0){
+        int hour = time.getHour();
+        if(hour == 0 && minute == 0){
             plusButton.setVisible(true);
             minusButton.setVisible(false);
-        }else if(minute == 59){
+        }else if(hour == 23 && minute == 59){
             plusButton.setVisible(false);
             minusButton.setVisible(true);
         }else{

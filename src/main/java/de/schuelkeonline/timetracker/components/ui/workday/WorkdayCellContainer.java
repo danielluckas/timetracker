@@ -58,7 +58,7 @@ public class WorkdayCellContainer {
         weekdayLabel.setText(workday.getDate().getDayOfWeek().getDisplayName(TextStyle.SHORT, Locale.GERMAN));
         countLabel.setText(String.valueOf(workday.getProjectTimes().size()));
         
-        balanceLabel.setText(new DecimalFormat("#,##").format(workday.getDayBalance()));
+        balanceLabel.setText(String.format("%.2f", workday.getDayBalance()));
         
     }
     

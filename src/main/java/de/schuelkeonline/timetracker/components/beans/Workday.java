@@ -7,6 +7,7 @@ package de.schuelkeonline.timetracker.components.beans;
 
 import de.schuelkeonline.timetracker.db.LocalDatePersistenceConverter;
 import de.schuelkeonline.timetracker.db.LocalTimePersistenceConverter;
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.util.ArrayList;
@@ -100,12 +101,19 @@ public class Workday {
             int balanceSeconds = endTimeSeconds - beginTimeSeconds;
             int hours = balanceSeconds / 3600;
             int minutes = (balanceSeconds - (hours * 3600)) / 60;
-            
+            float minutesF = 0.00f;
+            if(minutes != 0){
+                minutesF =  minutes / 60f;
+            }
             dayBalance = (float) hours;
-            float minutesFloat = (float) minutes;
+            float minutesFloat =  minutesF;
             dayBalance += minutesFloat;
+            BigDecimal bd = new BigDecimal(Float.toString(dayBalance));
+            bd = bd.setScale(2, BigDecimal.ROUND_HALF_UP);
+            dayBalance = bd.floatValue();
+            
         }
-        return dayBalance;
+        return dayBalance ;
     }
     
 }
